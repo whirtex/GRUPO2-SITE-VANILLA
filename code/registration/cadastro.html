@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBMEC - Cadastro</title>
+    <link rel="stylesheet" href="styleRegistration.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+        <a href="/code/main/index.html" class="logo">
+                <img src="/code/img/logo-Ibmec.svg" alt="Logo Ibmec">
+            </a>
+            <h2>Abra uma conta</h2>
+            <p>Digite seu e-mail para se inscrever neste aplicativo</p>
+        </div>
+
+        <form>
+            <div class="form-group">
+                <input type="text" placeholder="Nome Completo" required>
+            </div>
+
+            <div class="form-group">
+                <input type="email" placeholder="Email@dominio.com" required>
+            </div>
+
+            <div class="form-group">
+                <input type="text" placeholder="CNPJ" required>
+            </div>
+
+            <div class="form-group">
+                <input type="password" placeholder="Senha" required>
+            </div>
+
+            <div class="form-group">
+                <select required>
+                    <option value="">Qual o porte da sua empresa?</option>
+                    <option value="micro">Microempresa</option>
+                    <option value="pequena">Pequena Empresa</option>
+                    <option value="media">Média Empresa</option>
+                    <option value="grande">Grande Empresa</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <select required>
+                    <option value="">Tem vínculo com o IBMEC Hubs</option>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <select required>
+                    <option value="">Área de atuação</option>
+                    <option value="tecnologia">Tecnologia</option>
+                    <option value="saude">Saúde</option>
+                    <option value="educacao">Educação</option>
+                    <option value="financeiro">Financeiro</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <select required>
+                    <option value="">Tipo de demanda</option>
+                    <option value="consultoria">Consultoria</option>
+                    <option value="desenvolvimento">Desenvolvimento</option>
+                    <option value="pesquisa">Pesquisa</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-cadastrar" onclick="irParaIndex(event)">Cadastre-se</button>
+
+            <div class="or-continue">ou continue com</div>
+
+            <button type="button" class="btn-login" onclick="irParaLogin()">Login</button>
+          
+        </form>
+
+        <div class="footer-text">
+            Ao continuar, você concorda com os nossos 
+            <a href="#">Termos de Serviço</a> e <a href="#">Política de Privacidade</a>
+        </div>
+    </div>
+
+    <script>
+        function irParaIndex(event) {
+            event.preventDefault();
+            window.location.href = 'index.html';
+        }
+
+        function irParaLogin() {
+            window.location.href = 'login.html';
+        }
+        
+    </script>
+</body>
+</html>

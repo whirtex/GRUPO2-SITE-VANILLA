@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IBMEC</title>
+     <link rel="stylesheet" href="/code/login/styleLogin.css" />
+    <link rel="stylesheet" href="styleProjectExp.css" />
+    <link rel="stylesheet" href="/code/main/style.css" />
+    <script src="https://kit.fontawesome.com/7460f8e3eb.js" crossorigin="anonymous" defer></script>
+  </head>
+  <body>
+      <body>
+    <header class="site-header">
+      <div class="header__top-bar"></div>
+      <div class="container header__container">
+        <a href="/code/main/index.html" class="header__logo">
+          <img src="/code/img/logo-Ibmec.svg" alt="Logo Ibmec" />
+        </a>
+        <nav class="header__nav">
+          <ul>
+            <li><a href="/code/main/index.html">Início</a></li>
+            <li><a href="/code/thatWeAre/quemSomos.html">Quem Somos</a></li>
+            
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <a href="#" class="btn btn--entrar abrirLoginBtn">Entrar</a>
+          <a href="/code/registration/cadastro.html" class="btn btn--cadastre"
+            >Cadastre-se</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main-content">
+      <section class="project-container">
+        <!-- Lado Esquerdo -->
+        <div class="project-info">
+          <h1>Sistema de Agendamento de Tarefas</h1>
+          <article>
+            <h2>Descrição do Projeto:</h2>
+            <p>
+              Este projeto consiste em um robusto microsserviço de backend, projetado para orquestrar e automatizar processos de negócio que precisam ser executados de forma recorrente. 
+              Através de uma API RESTful segura, o sistema permite que outras aplicações registrem "jobs" (tarefas) de forma programática, definindo schedules de execução com alta flexibilidade por meio de expressões cron. 
+              Uma vez agendada, cada tarefa entra em uma fila de processamento que garante sua execução de forma confiável e na ordem correta, mesmo em caso de falhas ou reinicializações do sistema. 
+              A arquitetura oferece visibilidade completa sobre o ciclo de vida de cada job, com status de sucesso ou falha e logs detalhados, sendo a solução ideal para automatizar rotinas críticas como o envio de relatórios diários, 
+              a sincronização noturna de bancos de dados e backups programados, aumentando drasticamente a eficiência operacional e reduzindo a necessidade de intervenção manual.
+            </p>
+          </article>
+
+          <!-- Informações em cards -->
+          <aside class="info-cards">
+            <div class="item-relacionado">
+              <h3>Membros</h3>
+              <p><i class="fa-solid fa-users"></i> 5 pessoas</p>
+            </div>
+            <div class="item-relacionado">
+              <h3>Tecnologias</h3>
+              <p><i class="fa-solid fa-microchip"></i> Node JS, TypeScript, Redis, PostgreSQL, Docker</p>
+            </div>
+            <div class="item-relacionado">
+              <h3>Localização</h3>
+              <p><i class="fa-solid fa-location-dot"></i> São Paulo, SP</p>
+            </div>
+            <div class="item-relacionado">
+              <h3>Serviços Prestados</h3>
+              <p><i class="fa-solid fa-robot"></i> Arquitetura de Backend, Desenvolvimento de API, Automação de Processos.</p>
+            </div>
+          </aside>
+
+          <!-- Botões embaixo -->
+          <div class="project-actions">
+            <a href="#" class="btn btn--primary">GitHub</a>
+            <a href="#" class="btn btn--secondary">Contatar equipe</a>
+          </div>
+        </div>
+
+        <!-- Lado Direito -->
+        <figure>
+          <img src="/code/img/img-projetos/img-projetos4.jpg" alt="Preview do sistema de agendamento" />
+        </figure>
+      </section>
+    </main>
+
+    <div class="modal-overlay" id="loginOverlay">
+      <div class="login-modal">
+        <a href="#" class="close-btn" id="fecharModal">&times;</a>
+        <div class="logo">
+          <img src="/code/img/logo-Ibmec.svg" alt="ibmec">
+        </div>
+        <p class="title">Entre na sua conta</p>
+        
+        <form id="loginForm">
+          <div class="input-group">
+            <input type="email" placeholder="Email@dominio.com" required>
+          </div>
+          <div class="input-group">
+            <input type="password" placeholder="Senha" required>
+          </div>
+          <button type="submit" class="btn-confirm">Confirmar</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="/code/login/script.js"></script>
+    
+    <hr class="linha-customizada">
+  
+    <!-- FOOTER -->
+    <footer>
+      <div class="container footer__container">
+        <div class="footer__col footer__col--brand">
+          <a href="/code/main/index.html" class="header__logo">
+            <img src="/code/img/logo-Ibmec.svg" alt="Logo Ibmec" /> 
+          </a>
+          <p>Avenida Armando Lombardi, 949<br />Barra da Tijuca, Rio de Janeiro</p>
+          <a href="#">Entre em contato conosco</a>
+          <a href="#">Feedback do site</a>
+          <div class="footer__social-links">
+            <a href="https://x.com/Ibmec_oficial"> <img src="/code/img/icons/twitter.svg" alt="Twitter" /> </a>
+            <a href="#"> <img src="/code/img/icons/instagram.svg" alt="Instagram" /> </a>
+            <a href="#"> <img src="/code/img/icons/tik-tok.svg" alt="TikTok" /> </a>
+            <a href="#"> <img src="/code/img/icons/linkedin.svg" alt="LinkedIn" /> </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__col-title">O Ibmec</h3>
+          <ul class="footer__who-list">
+            <li><a href="/code/thatWeAre/quemSomos.html">Quem somos</a></li>
+            <li><a href="#">Perguntas Frequentes</a></li>
+            <li><a href="#">Responsabilidade social</a></li>
+            <li><a href="#">Informações Acadêmicas</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col footer__col--projects">
+          <h3 class="footer__col-title">Projetos</h3>
+          <ul class="footer__project-list">
+            <li><a href="#">Direito</a></li>
+            <li><a href="/code/projects/projetos.html">Backend</a></li>
+            <li><a href="#">Frontend</a></li>
+            <li><a href="#">Inteligência Artificial</a></li>
+            <li><a href="#">Arquitetura</a></li>
+            <li><a href="#">Administração</a></li>
+            <li><a href="#">Economia e Finanças</a></li>
+            <li><a href="#">Mobile</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">User Experience</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom-bar">
+        <div class="container bottom-bar__container">
+          <p>© IBMEC - Todos os direitos reservados</p>
+          <nav>
+            <a href="#">Política de privacidade</a>
+            <a href="#">Código de Ética</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

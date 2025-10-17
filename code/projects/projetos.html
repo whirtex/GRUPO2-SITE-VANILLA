@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IBMEC</title>
+    <link rel="stylesheet" href="styleProjects.css" />
+    <link rel="stylesheet" href="/code/login/styleLogin.css" />
+    <link rel="stylesheet" href="/code/main/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header__top-bar"></div>
+      <div class="container header__container">
+        <a href="/code/main/index.html" class="header__logo">
+          <img src="/code/img/logo-Ibmec.svg" alt="Logo Ibmec" />
+        </a>
+        <nav class="header__nav">
+          <ul>
+            <li><a href="/code/main/index.html">Início</a></li>
+            <li><a href="/code/thatWeAre/quemSomos.html">Quem Somos</a></li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <a href="#" class="btn btn--entrar abrirLoginBtn">Entrar</a>
+          <a href="/code/registration/cadastro.html" class="btn btn--cadastre"
+            >Cadastre-se</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main class="projects" aria-label="Vitrine de projetos">
+      <!-- Título -->
+      <section class="projects__title">
+        <h1>Projetos de Back-end</h1>
+        <p>
+          Trabalhos desenvolvidos por alunos do Ibmec em disciplinas de
+          Engenharia e Tecnologia.
+        </p>
+      </section>
+
+      <!-- Grid de Cards -->
+      <section class="projects__grid" aria-label="Lista de projetos">
+        <!-- Card 1 -->
+        <article class="project-card">
+          <h3 class="project-card__title">
+            API de Gestão de Estoque em Tempo Real
+          </h3>
+          <p class="project-card__campus">Ibmec Barra, RJ</p>
+          <img
+            class="project-card__thumb"
+            src="/code/img/img-projetos/img-projetos1.jpg"
+            alt="Tela de código representando API de estoque"
+          />
+          <a
+            href="/code/projectExample/projetoExample.html"
+            class="project-card__btn"
+            >Ver Projetos</a
+          >
+        </article>
+
+        <!-- Card 2 -->
+        <article class="project-card">
+          <h3 class="project-card__title">
+            Pipeline de Processamento de Dados para Analytics
+          </h3>
+          <p class="project-card__campus">Ibmec Centro, RJ</p>
+          <img
+            class="project-card__thumb"
+            src="/code/img/img-projetos/img-projetos2.jpg"
+            alt="Visual de dados e gráficos"
+          />
+          <a
+            href="/code/projectExample/projetoExample.html"
+            class="project-card__btn"
+            >Ver Projetos</a
+          >
+        </article>
+
+        <!-- Card 3 -->
+        <article class="project-card">
+          <h3 class="project-card__title">
+            Microsserviço de Autenticação Centralizada
+          </h3>
+          <p class="project-card__campus">Ibmec Faria Lima, SP</p>
+          <img
+            class="project-card__thumb"
+            src="/code/img/img-projetos/img-projetos3.jpg"
+            alt="Fluxos de autenticação e segurança"
+          />
+          <a
+            href="/code/projectExample/projetoExample.html"
+            class="project-card__btn"
+            >Ver Projetos</a
+          >
+        </article>
+
+        <!-- Card 4 -->
+        <article class="project-card">
+          <h3 class="project-card__title">Sistema de Agendamento de Tarefas</h3>
+          <p class="project-card__campus">Ibmec Paulista, SP</p>
+          <img
+            class="project-card__thumb"
+            src="/code/img/img-projetos/img-projetos4.jpg"
+            alt="Agenda e tarefas automatizadas"
+          />
+          <a
+            href="/code/projectExample/projetoExample.html"
+            class="project-card__btn"
+            >Ver Projetos</a>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="project-card">
+          <h3 class="project-card__title">API de Notificações</h3>
+          <p class="project-card__campus">Ibmec Belo Horizonte, MG</p>
+          <img
+            class="project-card__thumb"
+            src="/code/img/img-projetos/img-projetos5.jpg"
+            alt="Agenda e tarefas automatizadas"/>
+          <a
+            href="/code/projectExample/projetoExample.html"
+            class="project-card__btn"
+            >Ver Projetos</a>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="project-card">
+          <h3 class="project-card__title">
+            Gateway de Pagamentos Simplificado
+          </h3>
+          <p class="project-card__campus">Ibmec Brasília, DF</p>
+          <img
+            class="project-card__thumb"
+            src="/code/img/img-projetos/img-projetos6.jpg"
+            alt="Integração com provedores de pagamento"
+          />
+          <a
+            href="/code/projectExample/projetoExample.html"
+            class="project-card__btn"
+            >Ver Projetos</a>
+        </article>
+      </section>
+
+      <!-- Ver mais -->
+      <div class="projects__more">
+        <button class="projects__more-btn" type="button">
+          Ver mais projetos
+        </button>
+      </div>
+    </main>
+
+    <div class="modal-overlay" id="loginOverlay">
+      <div class="login-modal">
+        <a href="#" class="close-btn" id="fecharModal">&times;</a>
+        <div class="logo">
+          <img src="/code/img/logo-Ibmec.svg" alt="ibmec" />
+        </div>
+        <p class="title">Entre na sua conta</p>
+
+        <form id="loginForm">
+          <div class="input-group">
+            <input type="email" placeholder="Email@dominio.com" required />
+          </div>
+          <div class="input-group">
+            <input type="password" placeholder="Senha" required />
+          </div>
+          <button type="submit" class="btn-confirm">Confirmar</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="/code/login/script.js"></script>
+
+    <hr class="linha-customizada">
+
+    <footer>
+      <div class="container footer__container">
+        <div class="footer__col footer__col--brand">
+          <a href="/code/main/index.html" class="header__logo">
+            <img src="/code/img/logo-Ibmec.svg" alt="Logo Ibmec" />
+          </a>
+          <p>
+            Avenida Armando Lombardi, 949<br />Barra da Tijuca, Rio de Janeiro
+          </p>
+          <a href="#">Entre em contato conosco</a>
+          <a href="#">Feedback do site</a>
+          <div class="footer__social-links">
+            <a href="https://x.com/Ibmec_oficial">
+              <img src="/code/img/icons/twitter.svg" alt="" />
+            </a>
+            <a href="#"> <img src="/code/img/icons/instagram.svg" alt="" /> </a>
+            <a href="#"> <img src="/code/img/icons/tik-tok.svg" alt="" /> </a>
+            <a href="#"> <img src="/code/img/icons/linkedin.svg" alt="" /> </a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__col-title">O Ibmec</h3>
+          <ul class="footer__who-list">
+            <li><a href="/code/thatWeAre/quemSomos.html">Quem somos</a></li>
+            <li><a href="#">Perguntas Frequentes</a></li>
+            <li><a href="#">Responsabilidade social</a></li>
+            <li><a href="#">Informações Acadêmicas</a></li>
+          </ul>
+        </div>
+        <div class="footer__col footer__col--projects">
+          <h3 class="footer__col-title">Projetos</h3>
+          <ul class="footer__project-list">
+            <li><a href="#">Direito</a></li>
+            <li><a href="/code/projects/projetos.html">Backend</a></li>
+            <li><a href="#">Frontend</a></li>
+            <li><a href="#">Inteligência Artificial</a></li>
+            <li><a href="#">Arquitetura</a></li>
+            <li><a href="#">Administração</a></li>
+            <li><a href="#">Ecomomia e Finanças</a></li>
+            <li><a href="#">Mobile</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">User Experience</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom-bar">
+        <div class="container bottom-bar__container">
+          <p>© IBMEC - Todos os direitos reservados</p>
+          <nav>
+            <a href="#">Política de privacidade</a>
+            <a href="#">Código de Ética</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
