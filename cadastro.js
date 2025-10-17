@@ -1,6 +1,5 @@
 const onlyDigits = (s) => (s || "").replace(/\D/g, "");
 
-// Aplica máscara leve no CNPJ enquanto digita (sem validar)
 const cnpjInput = document.getElementById("cnpj");
 cnpjInput.addEventListener("input", () => {
   const d = onlyDigits(cnpjInput.value).slice(0, 14);
