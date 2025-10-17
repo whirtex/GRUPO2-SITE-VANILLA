@@ -35,9 +35,9 @@ form.addEventListener("submit", (e) => {
   }
 
   e.preventDefault();
-  window.location.href = "main/index.html";
+  window.location.href = "index.html";
 });
 
 document.getElementById("btnLogin").addEventListener("click", () => {
-  window.location.href = "main/index.html";
+  window.location.href = "index.html";
 });
